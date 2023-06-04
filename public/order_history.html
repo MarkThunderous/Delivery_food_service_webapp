@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order History</title>
+    <link rel="stylesheet" href="order_history.css">
+</head>
+<body>
+    <nav>
+        <a href="shops.html">Shop</a>
+        <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+        <a href="order_history.html">Order History</a>
+        <a href="coupons.html">Coupons</a>
+    </nav>
+    <div class="content">
+        <div class="customer-info">
+            <h1>Search Order History</h1>
+            <form id="search-form">
+                <input type="text" id="email" placeholder="Email">
+                <input type="text" id="phone" placeholder="Phone Number">
+                <input type="text" id="order-id" placeholder="Order ID">
+                <button type="submit" id="search-button">Search</button>
+            </form>
+        </div>
+        <div class="order-history">
+            <h1>Your Order</h1>
+            <div id="order-list">
+                <!-- Order history will be added here dynamically -->
+            </div>
+        </div>
+    </div>
+    <script src="order_history.js"></script>
+</body>
+</html>

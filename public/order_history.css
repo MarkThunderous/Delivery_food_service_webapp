@@ -1,0 +1,160 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+nav {
+    background-color: #f8f8f8;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#sidebar-toggle {
+    margin-right: 10px;
+}
+
+nav a {
+    font-size: 18px;
+    padding-left: 20px;
+    display: block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #777;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.customer-info {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    border-right: 1px solid #ccc;
+}
+
+.customer-info h1 {
+    margin: 0 0 10px;
+    font-size: 20px;
+    color: #333;
+}
+
+.customer-info input[type="text"], .customer-info input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.customer-info input[type="text"]:last-child, .customer-info input[type="email"]:last-child {
+    margin-bottom: 0;
+}
+.content {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#search-button{
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #333;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.search-section {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.search-section input[type="text"],
+.search-section input[type="email"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.search-section button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-section button:hover {
+    background-color: #45a049;
+}
+.order {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.order h2 {
+    margin: 0 0 10px 0;
+}
+
+.order p {
+    margin: 0;
+}
+
+.order-total {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.order-list {
+    width: 80%;
+    border-collapse: collapse;
+}
+
+.order-list th,
+.order-list td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.order-list th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}

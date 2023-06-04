@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shops</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav>
+    <a href="#" id="sidebar-toggle">Restaurants</a>
+    <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+    <a href="order_history.html">Order History</a>
+    <a href="coupons.html">Coupons</a>
+</nav>
+<div id="sidebar">
+    <h1>Available Shops</h1>
+    <div id="shop-list">
+        <!-- Shops will be added here dynamically -->
+    </div>
+</div>
+<div id="main">
+    <div class="products">
+        <h1>Restaurant menu</h1>
+        <div id="placeholder-wrapper">
+            <p id="placeholder">Pick a restaurant to start ordering food</p>
+            <button id="show-sidebar-button">Show restaurants</button>
+        </div>
+        <div id="product-list" class="product-grid">
+            <!-- Products will be added here dynamically -->
+        </div>
+    </div>
+</div>
+
+<script src="shops.js"></script>
+</body>
+</html>

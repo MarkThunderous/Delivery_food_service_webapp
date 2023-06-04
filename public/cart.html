@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <a href="shops.html">Shop</a>
+        <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+        <a href="order_history.html">Order History</a>
+        <a href="coupons.html">Coupons</a>
+    </nav>
+    <div class="content">
+        <div class="customer-info">
+            <h1>Your Info</h1>
+        <form id="customer-info">
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="text" id="phone" placeholder="Phone Number" required>
+            <input type="text" id="address" placeholder="Address" required>
+            <input type="email" id="email" placeholder="Email" required>
+        </form>
+
+        </div>
+        <div class="cart-items">
+            <h1>Your Cart</h1>
+            <div id="cart-items">
+                <!-- Cart items will be added here dynamically -->
+            </div>
+        </div>
+    </div>
+    <div id="coupon-input-div">
+    <input type="text" id="coupon-input" placeholder="Enter coupon code">
+    <button id="apply-coupon-button">Apply Coupon</button>
+</div>
+<div id="discount-amount">Discount: $0</div>
+<div id="total-price">Total: $0</div>
+
+    <div id="total-price"></div>
+    <button id="checkout-button">Checkout</button>
+    <script src="cart.js"></script>
+</body>
+</html>
