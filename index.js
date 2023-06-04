@@ -71,7 +71,7 @@ app.post('/api/order', async (req, res) => {
       total
     });
 
-    // Generate order number (you should replace this with your own logic)
+    // Generate order number
     newOrder.orderNumber = Math.floor(Math.random() * 1000000);
 
     // Save the order to the database

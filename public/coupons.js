@@ -46,5 +46,4 @@ function fetchCoupons() {
     .catch(error => console.error(error));
 }
 
-// Call the fetchCoupons function when the page loads
 fetchCoupons();

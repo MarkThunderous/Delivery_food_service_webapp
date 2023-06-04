@@ -1,5 +1,5 @@
 document.getElementById('search-form').addEventListener('submit', (e) => {
-  e.preventDefault(); // prevent the default form submission which causes a page refresh
+  e.preventDefault();
   function displayOrders(orders) {
     const orderListDiv = document.getElementById('order-list');
     orderListDiv.innerHTML = ''; // Clear any existing content
