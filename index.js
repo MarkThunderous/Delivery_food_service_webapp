@@ -9,7 +9,7 @@ app.use(cors());
 app.use(express.static('public'));
 const Order = require('./models/order');
 const Coupon = require('./models/coupon');
-mongoose.connect(process.env.MONGODB_CONNECTION_STRING, {
+mongoose.connect(process.env.DB_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
