@@ -1,6 +1,6 @@
 let currentShopId = null;
 
-fetch('http://localhost:3000/api/shops')
+fetch('http://localhost:80/api/shops')
     .then(response => response.json())
     .then(shops => {
         const shopList = document.getElementById('shop-list');

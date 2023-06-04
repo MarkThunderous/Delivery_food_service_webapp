@@ -31,7 +31,7 @@ document.getElementById('search-form').addEventListener('submit', (e) => {
   const phoneNumber = document.getElementById('phone').value;
   const orderNumber = document.getElementById('order-id').value;
 
-  fetch('http://localhost:3000/api/order-history', {
+  fetch('http://localhost:80/api/order-history', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'

@@ -93,7 +93,7 @@ document.getElementById('checkout-button').addEventListener('click', () => {
     email
   };
 
-  fetch('http://localhost:3000/api/order', {
+  fetch('http://localhost:80/api/order', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -159,7 +159,7 @@ document.getElementById('apply-coupon-button').addEventListener('click', () => {
 
     const code = document.getElementById('coupon-input').value;
 
-    fetch('http://localhost:3000/api/validate-coupon', {
+    fetch('http://localhost:80/api/validate-coupon', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

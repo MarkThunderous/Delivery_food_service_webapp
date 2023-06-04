@@ -1,5 +1,5 @@
 function fetchCoupons() {
-  fetch('http://localhost:3000/api/coupons')
+  fetch('http://localhost:80/api/coupons')
     .then(response => response.json())
     .then(coupons => {
       const couponListDiv = document.getElementById('coupon-list');
