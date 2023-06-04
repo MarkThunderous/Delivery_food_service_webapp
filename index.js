@@ -10,11 +10,12 @@ app.use(express.static("public"));
 const Order = require('./models/order');
 const Coupon = require('./models/coupon');
 
-mongoose.connect(process.env.DB_URL)
-const db = mongoose.connection;
-db.on('error', (err) => console.log(err));
-
-db.once('open', () => console.log("Connected to DB"));
+mongoose.connect(process.env.DB_URL, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+})
+.then(() => console.log('Connected to MongoDB successfully!'))
+.catch(err => console.error(err));
 
 const Shop = require('./models/shop');
 const CartItem = require('./models/cartItem');
