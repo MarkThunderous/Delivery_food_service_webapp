@@ -19,6 +19,10 @@ mongoose.connect(process.env.MONGODB_CONNECTION_STRING, {
 const Shop = require('./models/shop');
 const CartItem = require('./models/cartItem');
 
+app.get('/', function(req, res) {
+    res.redirect("/shops");
+});
+
 app.get('/shops', function(req, res) {
     res.sendFile(__dirname + '/public/shops.html');
 });
