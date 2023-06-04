@@ -6,16 +6,15 @@ const app = express();
 const cors = require('cors');
 app.use(bodyParser.json());
 app.use(cors());
-app.use(express.static('public'));
+app.use(express.static("public"));
 const Order = require('./models/order');
 const Coupon = require('./models/coupon');
 
-mongoose.connect(process.env.DB_URL, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-})
-.then(() => console.log('Connected to MongoDB successfully!'))
-.catch(err => console.error(err));
+mongoose.connect(process.env.DB_URL)
+const db = mongoose.connection;
+db.on('error', (err) => console.log(err));
+
+db.once('open', () => console.log("Connected to DB"));
 
 const Shop = require('./models/shop');
 const CartItem = require('./models/cartItem');
