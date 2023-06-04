@@ -9,6 +9,7 @@ app.use(cors());
 app.use(express.static('public'));
 const Order = require('./models/order');
 const Coupon = require('./models/coupon');
+
 mongoose.connect(process.env.DB_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true
@@ -171,6 +172,6 @@ app.post('/api/validate-coupon', async (req, res) => {
 });
 
 
-const PORT = process.env.PORT || 80;
+const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
